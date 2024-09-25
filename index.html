@@ -1,15 +1,14 @@
-<html>
-  <head>
+<html><head>
     <meta charset="utf-8">
     <meta name="format-detection" content="telephone=no">
     <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height">
-    <link rel="stylesheet" type="text/css" href="css/css-cx3.css">
-    <link rel="stylesheet" type="text/css" href="css/css-widgets.css">
-    <link rel="stylesheet" type="text/css" href="css/themes-standard.css">
-    <link rel="stylesheet" type="text/css" href="css/themes-night.css">
-    <link rel="stylesheet" type="text/css" href="css/themes-daylight.css">
-    <link rel="stylesheet" type="text/css" href="css/css-misc.css">
+    <link rel="stylesheet" type="text/css" href="css/cx3.css">
+    <link rel="stylesheet" type="text/css" href="css/widgets.css">
+    <link rel="stylesheet" type="text/css" href="css/themes/standard.css">
+    <link rel="stylesheet" type="text/css" href="css/themes/night.css">
+    <link rel="stylesheet" type="text/css" href="css/themes/daylight.css">
+    <link rel="stylesheet" type="text/css" href="css/misc.css">
     <title>ASA :: CX-3</title>
     <script type="text/javascript">
       var DEBUG = true; 
@@ -17,63 +16,68 @@
     </script>
     <!-- how is cordova used in this app? -->
     <!-- <script type="text/javascript" src="cordova.js"></script> -->
-    <script type="text/javascript" src="js/backend-calculator.js"></script>
-    <script type="text/javascript" src="js/backend-formatHmsDms.js"></script>
-    <script type="text/javascript" src="js/backend-units.js"></script>
-    <script type="text/javascript" src="js/backend-StopWatch.js"></script>
-    <script type="text/javascript" src="js/model-definedUnits.js"></script>
-    <script type="text/javascript" src="js/model-defaultUnits.js"></script>
-    <script type="text/javascript" src="js/backend-observable.js"></script>
-    <script type="text/javascript" src="js/backend-variables.js"></script>
-    <script type="text/javascript" src="js/backend-equations.js"></script>
-    <script type="text/javascript" src="js/model-CX3Settings.js"></script>
-    <script type="text/javascript" src="js/model-definedVariables.js"></script>
-    <script type="text/javascript" src="js/model-LinearEquations.js"></script>
-    <script type="text/javascript" src="js/model-GroundSpeedEquations.js"></script>
-    <script type="text/javascript" src="js/model-AltitudeEquations.js"></script>
-    <script type="text/javascript" src="js/model-AirSpeedEquations.js"></script>
-    <script type="text/javascript" src="js/model-CloudBaseEquations.js"></script>
-    <script type="text/javascript" src="js/model-StdAtmosphereEquations.js"></script>
-    <script type="text/javascript" src="js/model-FuelEquations.js"></script>
-    <script type="text/javascript" src="js/model-GlideEquations.js"></script>
-    <script type="text/javascript" src="js/model-WindCorrectionEquations.js"></script>
-    <script type="text/javascript" src="js/model-CompassHeadingEquations.js"></script>
-    <script type="text/javascript" src="js/model-TripPlannerEquations.js"></script>
-    <script type="text/javascript" src="js/model-RhumbLineEquations.js"></script>
-    <script type="text/javascript" src="js/model-WeightAndBalanceEquations.js"></script>
-    <script type="text/javascript" src="js/model-CX3Equations.js"></script>
-    <script type="text/javascript" src="js/model-CX3EquationsByUnits.js"></script>
-    <script type="text/javascript" src="js/model-timezones.js"></script>
-    <script type="text/javascript" src="js/model-CX3UserData.js"></script>
-    <script type="text/javascript" src="js/controller-CX3Calculator.js"></script>
-    <script type="text/javascript" src="js/view-misc.js"></script>
-    <script type="text/javascript" src="js/controller-EventHandler.js"></script>
-    <script type="text/javascript" src="js/view-BoundUI.js"></script>
-    <script type="text/javascript" src="js/view-Panel.js"></script>
-    <script type="text/javascript" src="js/controller-System.js"></script>
-    <script type="text/javascript" src="js/controller-FileOps.js"></script>
-    <script type="text/javascript" src="js/controller-widgetIDs.js"></script>
-    <script type="text/javascript" src="js/controller-Widget.js"></script>
-    <script type="text/javascript" src="js/controller-CX3MenuItemWidget.js"></script>
-    <script type="text/javascript" src="js/controller-CalculatorFieldWidget.js"></script>
-    <script type="text/javascript" src="js/controller-CX3TripItemWidget.js"></script>
-    <script type="text/javascript" src="js/controller-CX3CalculatorWidget.js"></script>
-    <script type="text/javascript" src="js/controller-TimerDisplayWidget.js"></script>
-    <script type="text/javascript" src="js/controller-ListScreen.js"></script>
-    <script type="text/javascript" src="js/controller-TimerScreen.js"></script>
-    <script type="text/javascript" src="js/controller-keypad.js"></script>
-    <script type="text/javascript" src="js/controller-keyboard.js"></script>
-    <script type="text/javascript" src="js/view-screen.js"></script>
-    <script type="text/javascript" src="js/controller-MemoryScreen.js"></script>
-    <script type="text/javascript" src="js/controller-equationScreen.js"></script>
-    <script type="text/javascript" src="js/controller-tripPlannerScreen.js"></script>
-    <script type="text/javascript" src="js/controller-calculatorScreen.js"></script>
-    <script type="text/javascript" src="js/controller-application.js"></script>
-    <script type="text/javascript" src="js/view-jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="js/view-keyboard-effects.js"></script>
-    <script type="text/javascript"> //app.initialize(); </script>
-    <script type="text/javascript" src="js/backend-test.js"></script>
-    <script>
+    <script type="text/javascript" src="js/backend/calculator.js"></script>
+    <script type="text/javascript" src="js/backend/formatHmsDms.js"></script>
+    <script type="text/javascript" src="js/backend/units.js"></script>
+    <script type="text/javascript" src="js/backend/StopWatch.js"></script>
+    <script type="text/javascript" src="js/model/definedUnits.js"></script>
+    <script type="text/javascript" src="js/model/defaultUnits.js"></script>
+    <script type="text/javascript" src="js/backend/observable.js"></script>
+    <script type="text/javascript" src="js/backend/variables.js"></script>
+    <script type="text/javascript" src="js/backend/equations.js"></script>
+    <script type="text/javascript" src="js/model/CX3Settings.js"></script>
+    <script type="text/javascript" src="js/model/definedVariables.js"></script>
+    <script type="text/javascript" src="js/model/LinearEquations.js"></script>
+    <script type="text/javascript" src="js/model/GroundSpeedEquations.js"></script>
+    <script type="text/javascript" src="js/model/AltitudeEquations.js"></script>
+    <script type="text/javascript" src="js/model/AirSpeedEquations.js"></script>
+    <script type="text/javascript" src="js/model/CloudBaseEquations.js"></script>
+    <script type="text/javascript" src="js/model/StdAtmosphereEquations.js"></script>
+    <script type="text/javascript" src="js/model/FuelEquations.js"></script>
+    <script type="text/javascript" src="js/model/GlideEquations.js"></script>
+    <script type="text/javascript" src="js/model/WindCorrectionEquations.js"></script>
+    <script type="text/javascript" src="js/model/CompassHeadingEquations.js"></script>
+    <script type="text/javascript" src="js/model/TripPlannerEquations.js"></script>
+    <script type="text/javascript" src="js/model/RhumbLineEquations.js"></script>
+    <script type="text/javascript" src="js/model/WeightAndBalanceEquations.js"></script>
+    <script type="text/javascript" src="js/model/CX3Equations.js"></script>
+    <script type="text/javascript" src="js/model/CX3EquationsByUnits.js"></script>
+    <script type="text/javascript" src="js/model/timezones.js"></script>
+    <script type="text/javascript" src="js/model/CX3UserData.js"></script>
+    <script type="text/javascript" src="js/controller/CX3Calculator.js"></script>
+    <script type="text/javascript" src="js/view/misc.js"></script>
+    <script type="text/javascript" src="js/controller/EventHandler.js"></script>
+    <script type="text/javascript" src="js/view/BoundUI.js"></script>
+    <script type="text/javascript" src="js/view/Panel.js"></script>
+    <script type="text/javascript" src="js/controller/System.js"></script>
+    <script type="text/javascript" src="js/controller/FileOps.js"></script>
+    <script type="text/javascript" src="js/controller/widgetIDs.js"></script>
+    <script type="text/javascript" src="js/controller/Widget.js"></script>
+    <script type="text/javascript" src="js/controller/CX3MenuItemWidget.js"></script>
+    <script type="text/javascript" src="js/controller/CalculatorFieldWidget.js"></script>
+    <script type="text/javascript" src="js/controller/CX3TripItemWidget.js"></script>
+    <script type="text/javascript" src="js/controller/CX3CalculatorWidget.js"></script>
+    <script type="text/javascript" src="js/controller/TimerDisplayWidget.js"></script>
+    <script type="text/javascript" src="js/controller/ListScreen.js"></script>
+    <script type="text/javascript" src="js/controller/TimerScreen.js"></script>
+    <script type="text/javascript" src="js/controller/keypad.js"></script>
+    <script type="text/javascript" src="js/controller/keyboard.js"></script>
+    <script type="text/javascript" src="js/view/screen.js"></script>
+    <script type="text/javascript" src="js/controller/MemoryScreen.js"></script>
+    <script type="text/javascript" src="js/controller/equationScreen.js"></script>
+    <script type="text/javascript" src="js/controller/tripPlannerScreen.js"></script>
+    <script type="text/javascript" src="js/controller/calculatorScreen.js"></script>
+    <script type="text/javascript" src="js/controller/application.js"></script>
+    <script type="text/javascript" src="js/view/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/view/keyboard-effects.js"></script>
+
+    <script type="text/javascript">
+      //app.initialize();
+    </script>
+    <script type="text/javascript" src="js/backend/test.js"></script>
+	
+	<script>
+
 		//jQuery events (view/keyboard-effects.js)
 		jQuery(document).ready(function () {
 			InitializeEvents();
@@ -90,7 +94,7 @@
         <p class="event received">Device is Ready</p>
       </div>
     </div> -->
-    <script type="text/javascript" src="js/2223-js-index.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
 
     <script type="text/javascript">
       function PreloadImages() {
@@ -154,7 +158,7 @@
           <div id="status-bar-battery">
             BATT
           </div>
-          <div id="status-bar-clock">02:39Z</div>
+          <div id="status-bar-clock">02:51Z</div>
         </div>
         <div id="subtitle" class=" hidden"></div>
         <div id="screen">
@@ -446,13 +450,15 @@
 		</div>
       </div>
     </div>
+
     <div id="options">
-      <a id="blob_link" href="cx3e.html" download="DATA.CX3" style="display: none">Save Config</a>
+      <a id="blob_link" href="" download="DATA.CX3" style="display: none">Save Config</a>
       <form id="fops_form">
         <input id="file_input" type="file" style="display:none">
       </form>
       <!-- <button id="load_file">Load Config</button> -->
       <!-- <button id="save_file">Save Config</button> -->
     </div>
-  </body>
-</html>
+  
+
+</body></html>
