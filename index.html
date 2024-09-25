@@ -1,5 +1,5 @@
 <html>
-	<head>
+  <head>
     <meta charset="utf-8">
     <meta name="format-detection" content="telephone=no">
     <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="css/themes/night.css">
     <link rel="stylesheet" type="text/css" href="css/themes/daylight.css">
     <link rel="stylesheet" type="text/css" href="css/misc.css">
-    <title>ASA :: CX-3</title>
+    <title>CX-3</title>
     <script type="text/javascript">
       var DEBUG = true; 
       var DEBUG_EVENTS = false;
@@ -74,13 +74,11 @@
     <script type="text/javascript"> //app.initialize(); </script> == $0
     <script type="text/javascript" src="js/backend/test.js"></script>
     <script>
-
-		//jQuery events (view/keyboard-effects.js)
-		jQuery(document).ready(function () {
-			InitializeEvents();
-		});
-	</script>
-	
+	      //jQuery events (view/keyboard-effects.js)
+	      jQuery(document).ready(function () {
+		  InitializeEvents();
+	      });
+    </script>
   </head>
   <body>
     <!--     <div class="app">
@@ -92,25 +90,26 @@
     </div> -->
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript">
-      function PreloadImages() {
-        var preload_images = [
-          // "img/calculator_keypad.png",
-          "img/logo.png",
-          "img/status_check_black.png",
-          "img/status_check_white.png",
-          "img/status_equals_black.png",
-          "img/status_equals_white.png",
-          "img/status_global_black.png",
-          "img/status_global_white.png",
-          "img/status_question_black.png",
-          "img/status_question_white.png"
-        ];
-        var preload_image = new Image();
-        for (i in preload_images) {
-          preload_image.src = preload_images[i];
-        }
-      }
-      PreloadImages();
+            function PreloadImages() {
+              var preload_images = [
+              // "img/calculator_keypad.png",
+              "img/logo.png",
+              "img/status_check_black.png",
+              "img/status_check_white.png",
+              "img/status_equals_black.png",
+              "img/status_equals_white.png",
+              "img/status_global_black.png",
+              "img/status_global_white.png",
+              "img/status_question_black.png",
+              "img/status_question_white.png"
+             ];
+             var preload_image = new Image();
+             for (i in preload_images) {
+               preload_image.src = preload_images[i];
+             }
+            }
+            PreloadImages();
+      </script>
     </script>
     <script type="text/javascript">
       function onDeviceReady() {
